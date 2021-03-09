@@ -1,4 +1,4 @@
-# Boilerplate for Next.js app with TailwindCSS and dark mode toggles
+# Next.js App with TailwindCSS and dark-mode toggle
 
 App boilerplate bootstrapped with create-next-app and TailwindCSS
 Dark mode implemented via context API
