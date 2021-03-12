@@ -1,15 +1,15 @@
-# Next.js App with TailwindCSS and dark-mode toggle
+# Dark Mode Toggle for React and Next.JS apps using Tailwind
 
-App boilerplate bootstrapped with create-next-app and TailwindCSS
-Dark mode implemented via context API
-Automatically switches based on user preference
+With tailwindCSS becoming more popular and dark-mode being an essential part of many users web experience I needed an easy way to integrate dark mode into my apps.
+
+With this simple package you will be ale to detect the users preferred theme (dark or light), set a key into localStorage and wrap your app into a context provider.
 
 ## Getting Started
 
-First, run the development server:
+### Installation
 
 ```bash
-npm run dev
+npm install tailwind-darkmode-toggle
 # or
-yarn dev
+yarn add tailwind-darkmode-toggle
 ```

@@ -1,7 +1,6 @@
 import { useContext } from 'react';
-import ThemeContext from '../context/ThemeContext';
+import ThemeContext from './ThemeContext';
 
-ThemeContext;
 const DarkModeToggle = ({ className }) => {
   const { dark, toggleDark } = useContext(ThemeContext);
   const moon =

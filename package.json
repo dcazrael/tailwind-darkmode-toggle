@@ -1,20 +1,54 @@
 {
-  "name": "nextjs_tailwind_boiler",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
+  "name": "tailwind-darkmode-toggle",
+  "version": "1.0.0",
+  "description": "Dark mode toggle for React or Next JS apps using tailwind.",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "browser": "dist/index.umd.js",
+  "files": [
+    "index.js",
+    "DarkModeToggle.jsx",
+    "setTheme.js",
+    "ThemeContext.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dcazrael/tailwind-darkmode-toggle"
   },
-  "dependencies": {
-    "next": "10.0.8",
-    "react": "17.0.1",
-    "react-dom": "17.0.1"
+  "keywords": [
+    "tailwind",
+    "tailwindCSS",
+    "nextjs",
+    "react",
+    "dark-mode",
+    "theme"
+  ],
+  "author": {
+    "name": "Michael Sachdev",
+    "email": "me@azumao.dev"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dcazrael/tailwind-darkmode-toggle/issues"
+  },
+  "homepage": "https://github.com/dcazrael/tailwind-darkmode-toggle#readme",
+  "scripts": {
+    "build": "rollup -c"
   },
   "devDependencies": {
+    "@babel/core": "^7.13.10",
+    "@babel/plugin-transform-runtime": "^7.12.10",
+    "@babel/preset-env": "^7.13.10",
+    "@babel/preset-react": "^7.12.13",
+    "@rollup/plugin-babel": "^5.3.0",
     "autoprefixer": "^10.2.5",
     "postcss": "^8.2.7",
+    "rollup": "^2.41.2",
     "tailwindcss": "^2.0.3"
+  },
+  "peerDependencies": {
+    "next": "^10.0.8",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
   }
 }
