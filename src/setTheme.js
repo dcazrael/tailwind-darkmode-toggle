@@ -1,4 +1,4 @@
-const setTheme = () => {
+function setTheme() {
   const storageKey = 'dark';
   const [dark, light] = ['dark', 'light'];
 
@@ -17,6 +17,10 @@ const setTheme = () => {
     d.classList.remove(darkMode ? light : dark);
     d.classList.add(darkMode ? dark : light);
   }
-};
+}
 
-setTheme();
+const ThemeScriptTag = () => {
+  const theme = `(${setTheme})()`;
+  return <script dangerouslySetInnerHTML={{ __html: theme }} />;
+};
+export default ThemeScriptTag;
