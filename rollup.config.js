@@ -1,4 +1,6 @@
 import babel from '@rollup/plugin-babel';
+import commonjs from '@rollup/plugin-commonjs';
+import { nodeResolve } from '@rollup/plugin-node-resolve';
 
 // the entry point for the library
 const input = 'src/index.js';
@@ -30,7 +32,7 @@ MODE.map((m) => {
       globals: { react: 'React' },
     },
     // this externalizes react to prevent rollup from compiling it
-    external: [/@babel\/runtime/],
+    external: ['react', /@babel\/runtime/],
     plugins: [
       // these are babel configurations
       babel({
@@ -38,6 +40,8 @@ MODE.map((m) => {
         plugins: ['@babel/transform-runtime'],
         babelHelpers: 'runtime',
       }),
+      nodeResolve(),
+      commonjs(),
     ],
   };
   config.push(conf);

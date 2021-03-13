@@ -1,3 +1,5 @@
+import React from 'react';
+
 function setTheme() {
   const storageKey = 'dark';
   const [dark, light] = ['dark', 'light'];

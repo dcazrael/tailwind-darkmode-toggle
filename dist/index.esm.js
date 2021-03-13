@@ -1,4 +1,4 @@
-import { createContext, useState, useEffect, useContext } from 'react';
+import React, { createContext, useState, useEffect, useContext } from 'react';
 import _slicedToArray from '@babel/runtime/helpers/slicedToArray';
 
 var defaultState = {
