@@ -1,6 +1,6 @@
 {
   "name": "tailwind-darkmode-toggle",
-  "version": "0.0.2",
+  "version": "1.0.2",
   "description": "Dark mode toggle for React or Next JS apps using tailwind.",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
