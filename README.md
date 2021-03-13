@@ -4,6 +4,8 @@ With tailwindCSS becoming more popular and dark-mode being an essential part of 
 
 With this simple package you will be ale to detect the users preferred theme (dark or light), set a key into localStorage and wrap your app into a context provider.
 
+Find a live version of it here: [https://tailwind-darkmode-toggle.vercel.app/]
+
 ## Getting Started
 
 ### Installation
